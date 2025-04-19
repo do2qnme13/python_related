@@ -1,5 +1,4 @@
 #Lhur Algorithms
-#
 def verify_card_number(card_number):
     sum_of_odd_digits = 0
     card_number_reversed = card_number[::-1]
