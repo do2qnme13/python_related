@@ -46,7 +46,11 @@ def arithmetic_arranger(problems, show_answers=False):
         '    '.join(dashes)
     )
 
+    print(arranged_problems)
+
     if show_answers:
         arranged_problems += '\n' + '    '.join(results)
+        
+        print(arranged_problems)
 
     return arranged_problems
