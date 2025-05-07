@@ -29,4 +29,22 @@ class InventoryItem:
             return InventoryItem(self.name, int(self.quantity / factor)) 
         raise ValueError("Division factor must be a non-zero number.")
     
+    # Comparison Operator
+    def __eq__(self,other):
+        if isinstance(other,InventoryItem):
+            return self.name == other.name and self.quantity == other.quantity
+        return False
+    
+    def __lt__(self,other):
+        if isinstance(other,InventoryItem) and self.name == other.name:
+            return self.quantity < other.quantity
+        return ValueError("Cannot compare items of different types.")
+    
+    def __gt__(self,other):
+        if isinstance(other,InventoryItem) and self.name == other.name:
+            return self.quantity > other.quantity
+        return ValueError("Cannot compare items of different types.")
+    
+
+
     
