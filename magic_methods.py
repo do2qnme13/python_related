@@ -47,4 +47,19 @@ class InventoryItem:
     
 
 
-    
+# Create some inventory items
+item1 = InventoryItem("Apple", 50)
+item2 = InventoryItem("Apple", 30)
+item3 = InventoryItem("Banana", 20)
+
+# Adding quantity of the same item
+result_add = item1 + item2
+print(result_add)
+
+# Subtracting quantity of the same item
+result_subtract = item1 - item2
+print(result_subtract)
+
+# Multiplying by factor
+result_multiply = item1 * 2
+print(result_multiply)
