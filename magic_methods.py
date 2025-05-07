@@ -60,6 +60,16 @@ print(result_add)
 result_subtract = item1 - item2
 print(result_subtract)
 
-# Multiplying by factor
+# Multiplying by a factor
 result_multiply = item1 * 2
 print(result_multiply)
+
+# Comparison between 2
+result_compare = item1 == item2
+print(result_compare)
+
+# Trying to add items of different types
+try:
+    result_add_different_types = item1 + item3
+except ValueError as e:
+    print(e)
