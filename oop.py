@@ -38,5 +38,6 @@ course = Course('English',2)
 
 course.add_student(s1)
 course.add_student(s2)
+course.add_student(s3)
 
 
