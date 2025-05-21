@@ -68,6 +68,16 @@ class Maze():
                 elif cell == '#':
                     self.walls.append((i,j))
 
+    def print_maze(self):
+        for row in self.maze:
+            for col in row:
+                if col == '#':
+                    print("▇",end=' ')
+                else: 
+                    print(col,end=' ')  
+            print(" ")
 
 
-maze1 = Maze("maze1.txt")
+
+maze1 = Maze("maze3.txt")
+maze1.print_maze()  # prints the maze
